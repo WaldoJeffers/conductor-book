@@ -4,6 +4,7 @@
 
 * [My Awesome API](README.md)
 
-## Methods
+## API reference
 
-* [Defining Methods](methods.md)
+* [map](methods.md)
+

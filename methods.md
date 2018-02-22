@@ -1,30 +1,20 @@
-# Defining Methods
+# map
 
-Methods allow you to smoothly display code examples in different languages.
+###### `(collection:: Collection, mapper:: Function) -> Collection | Promise<Collection>`
 
-{% method %}
-## My first method
+Iterates over a *collection* (`Array, Object, Map, Set`) and returns a new collection of the same type containing each value from the input collection after it has been transformed by the provided *mapper* function.
 
-My first method exposes how to print a message in JavaScript and Go.
-
-{% sample lang="js" %}
-Here is how to print a message to `stdout` using JavaScript.
+Like many Collection methods in Conductor, `map` works with **both asynchronous & synchronous** mappers. If you use a synchronous mapper, `map` will work like `Array.prototype.map`, Ramda or Lodash's `map`, and return a Collection synchronously.
+```js
+const values = [0, 2, 4]
+const double = x => 2 * x
+map(double, values) // [0, 4, 8]
+```
+If you use an *asynchronous* mapper, `map` will return a `Promise`, and you will need to use `await` or `Promise.prototype.then` to retrieve the new collection.
 
 ```js
-console.log('My first method');
+const values = [0, 2, 4]
+const double = async x => 2 * x
+map(double, values) // Promise<Pending>
+await map(double, values) // [0, 4, 8]
 ```
-
-{% sample lang="go" %}
-Here is how to print a message to `stdout` using Go.
-
-```go
-fmt.Println("My first method")
-```
-
-{% common %}
-Whatever language you are using, the result will be the same.
-
-```bash
-$ My first method
-```
-{% endmethod %}
