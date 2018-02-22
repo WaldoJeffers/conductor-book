@@ -1,6 +1,10 @@
 # map
 
-###### `(collection:: Collection, mapper:: Function) -> Collection | Promise<Collection>`
+`(collection:: Collection, mapper:: Function) -> Collection | Promise<Collection>`
+
+---
+
+#### description
 
 Iterates over a _collection_ \(`Array, Object, Map, Set`\) and returns a new collection of the same type containing each value from the input collection after it has been transformed by the provided _mapper_ function.
 
