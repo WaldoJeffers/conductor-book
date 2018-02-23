@@ -3,10 +3,9 @@
 ## Overview
 
 * [My Awesome API](README.md)
-* filter
-* filter
 
 ## API reference
 
+* [filter](filter.md)
 * [map](methods.md)
 
