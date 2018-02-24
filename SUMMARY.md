@@ -6,6 +6,6 @@
 
 ## API reference
 
+* [map](map.md)
 * [filter](filter.md)
-* [map](methods.md)
 
