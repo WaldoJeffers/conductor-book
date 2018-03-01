@@ -9,8 +9,7 @@ Nearly all of our today JavaScript code uses *asynchronous* operations, whether 
 Let's say we want to know who's really from Tatooine, using the awesome [Star Wars API](https://swapi.co/):
 ```js
 const character_ids = [1, 2, 3, 4, 5]
-const isFromTatooine = id => fetch(`https://swapi.co/planets/${id}`)
-.then(planet => planet.name === 'Tatooine')
+const isFromTatooine = id => fetch(`https://swapi.co/planets/${id}`).then(planet => planet.name === 'Tatooine')
 ```
 ###### without conductor
 ```js
