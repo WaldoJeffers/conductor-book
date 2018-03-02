@@ -8,14 +8,22 @@ Nearly all of our today JavaScript code uses *asynchronous* operations, whether 
 ##### example
 Let's say we want to know who's really from Tatooine, using the awesome [Star Wars API](https://swapi.co/):
 ```js
-const character_ids = [1, 2, 3, 4, 5]
-const isFromTatooine = id => fetch(`https://swapi.co/planets/${id}`).then(planet => planet.name === 'Tatooine')
+const characters = [
+    { id: 1, name: 'Luke Skywalker', planet_id: 1 },
+    { id: 2, name: 'C-3P0', planet_id: 1 },
+    { id: 3, name: 'R2-D2', planet_id: 8 },
+    { id: 4, name: 'Darth Vader', planet_id: 1 },
+    { id: 5, name: 'Leia Organa', planet_id: 2 }
+]
+const isFromTatooine = character => fetch(`https://swapi.co/planets/${character.planet_id}`)
+    .then(response => response.json())
+    .then(planet => planet.name === 'Tatooine')
 ```
 ###### without conductor
 ```js
-const tatooine_residents = await character_ids.filter(isFromTatooine) // ???
+const tatooine_residents = await characters.filter(isFromTatooine) // [Luke, C-3PO, R2-D2, Darth Vader, Leia]... wait what???
 ```
 ###### with conductor
 ```js
-const tatooine_residents = await filter(isFromTatooine, character_ids) // [1, 2, 4]
+const tatooine_residents = await filter(isFromTatooine, characters) // [Luke, C-3PO, Darth Vader]
 ```
