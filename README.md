@@ -29,4 +29,5 @@ const tatooine_residents = await filter(isFromTatooine, characters) // [Luke, C-
 ```
 The sharp-eyed reader which you are has already noticed that something seems to have gone wrong in our first filtering attempt: the result is a valid array, but last time you checked, R2 and Leia were definitely not from Tatooine! What happens is that `Array.prototype.filter` has no idea your predicate is asynchronous and does not how to wait for it. But since this predicate still returns a `Promise` which evaluates to a [truthy value](https://developer.mozilla.org/en-US/docs/Glossary/Truthy), it considers that the value matches the predicate and keeps it. Since `Array.prototype.filter` is itself synchronous, the `await` keyword is not helping here and only converts the result to a *resolved* `Promise.
 
+In our second attempt, the `filter` method from **conductor** *automatically* detects that your predicate is *asynchronous* and returns a `Promise` which will only be resolved when all items are properly filtered. Just add the magical `await` keyword to wait until the `Promise` is resolved, and *voilà*!
   
