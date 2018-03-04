@@ -3,6 +3,7 @@
 ## Overview
 
 * [Introduction](README.md)
+* [Core concepts](core-concepts.md)
 
 ## API reference
 
