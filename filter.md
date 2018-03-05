@@ -1,6 +1,6 @@
 # filter
 
-`(collection:: Collection, predicate:: Function) -> Collection | Promise<Collection>`
+`filter :: (Collection collection, Function predicate) -> Collection | Promise<Collection>`
 
 ---
 
