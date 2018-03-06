@@ -60,7 +60,7 @@ getFavoriteStarshipName(Luke) // 'X-Wing'
 
 Let's say `getStarships` was also used in a simple `printStarships`:
 ```js
-const printStarships = user => `${user.name} flies on ${getStarships(user).join().`
+const printStarships = user => `${user.name} flies on ${getStarships(user).join()}.`
 printStarships(Luke)// 'Luke flies on X-Wing, Millenium Falcon'
 ```
 This function is now broken because `getStarships` returns a `Promise`.
