@@ -37,7 +37,7 @@ Let's try using `compose` from Ramda or Lodash:
 ```js
 import {compose} from 'ramda' // or 'lodash.compose'
 
-const getFavoriteStarshipName = async compose(getStarshipName, fetchStarship, head, getStarships) // remember compose works left to right
+const getFavoriteStarshipName = async compose(getStarshipName, fetchStarship, head, getStarships) // remember compose works right to left
 getFavoriteStarshipName(Luke) // Error
 ```
 This throws an error, because `fetchStarship` returns a `Promise` which is not yet resolved when `starship_name` tries to retrieve the `name` property on its passed parameter. Too bad!
