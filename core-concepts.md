@@ -5,10 +5,10 @@ The most important concept of **conductor** is that *you* are in control of the 
 ### A quick example
 Let's say we have a couple of utility functions, some synchronous and other asynchronous, and a user (Luke) whose favorite starship we would like to know.
 ```js
-const getStarships = user => user.starships
-const head = array => array[0]
-const fetchStarship = async starship_URL => fetch(starship_URL).then(response => response.json())
-const getStarshipName = starship => starship.name
+const getStarships = user => user.starships // sync
+const head = array => array[0] // sync
+const fetchStarship = async starship_URL => fetch(starship_URL).then(response => response.json()) // async
+const getStarshipName = starship => starship.name // sync
 
 const Luke = {
     name: 'Luke Skywalker', 
