@@ -69,7 +69,7 @@ This function is now broken because `getStarships` returns a `Promise`.
 [Promises are *contagious*](https://books.google.com/books?id=G7rBCQAAQBAJ&pg=PA25&lpg=PA25&dq=javascript+promises+are+contagious&source=bl&ots=NjXvlDkgSS&sig=4otCu3qz4HlEHRZwuBnpBJt5cHY&hl=fr&sa=X&redir_esc=y#v=onepage&q=javascript%20promises%20are%20contagious&f=false=), in the sense that their asynchronous nature spreads to their surroundings whether you like it or not.
 
 ### Back to you, Larry
-With **conductor**, you won't have to make all your utility functions *asynchronous*, since all the library's functions will work with both synchronous and asynchronous functions, allowing you to mix them with no hassle.
+With **conductor**, you won't have to make all your utility functions *asynchronous* to compose them, since all the library's functions will work with both synchronous and asynchronous functions, allowing you to mix them with no hassle.
 Let's pull back our attempt at using `compose` from the previous example, but this time using **conductor**'s `compose` function.
 ```js
 import {compose} from 'conductor'
