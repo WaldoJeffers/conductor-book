@@ -40,7 +40,7 @@ import {compose} from 'ramda' // or 'lodash.compose'
 const getFavoriteStarshipName = async compose(getStarshipName, fetchStarship, head, getStarships) // remember compose works right to left
 getFavoriteStarshipName(Luke) // Error
 ```
-This throws an error, because `fetchStarship` returns a `Promise` which is not yet resolved when `starship_name` tries to retrieve the `name` property on its passed parameter. Too bad!
+This throws an error, because `fetchStarship` returns a `Promise` which is not yet resolved when `getStarshipName` tries to retrieve the `name` property on its passed parameter. Too bad!
 
 Oh! We suddenly remember that `Promises` have a [`then`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) method, which allows chaining. Let's use that.
 ```js
