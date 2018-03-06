@@ -31,7 +31,7 @@ const getFavoriteStarshipName = async user () => {
 
 getFavoriteStarshipName(Luke) // 'X-Wing'
 ```
-That works! But this seems really bloated, and we should be able to write simpler code since we took the time to write these neat & concise modular functions. Could we rewrite `getFavoriteStarshipName` in a way that takes advantage that all these functions can be chained, or rather *composed* since we would like to write our code in a more minimalistic, or *point-free*, way.
+That works! But this seems really bloated, and we should be able to write simpler code since we took the time to write these neat & concise modular functions. Could we rewrite `getFavoriteStarshipName` in a way that takes advantage that all these functions can be chained, or rather *composed* since we would like to write our code in a more minimalistic, or *point-free*, way ?
 
 Let's try using `compose` from Ramda or Lodash:
 ```js
