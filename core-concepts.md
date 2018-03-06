@@ -13,8 +13,8 @@ const getStarshipName = starship => starship.name // sync
 const Luke = {
     name: 'Luke Skywalker', 
     starships: [
-        https://swapi.co/api/starships/12/, 
-        https://swapi.co/api/starships/22/
+        'https://swapi.co/api/starships/12/', 
+        'https://swapi.co/api/starships/22/'
     ]
 }
 
