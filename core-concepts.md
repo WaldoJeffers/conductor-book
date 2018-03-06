@@ -1,6 +1,6 @@
 # Core concepts
 ## Control of the execution flow
-The most important concept of **conductor** is that *you* are in control of the execution (it's actually this library's very goal), but you have to see this both as a *advantage* and a *constraint*. Promises are frequently blamed for [never being synchronous](https://staltz.com/promises-are-not-neutral-enough.html#never-synchronous), meaning that any function in a Promise chain will run *asynchronously*, whether this function is actually asynchronous or not.
+The most important concept of **conductor** is that *you* are in control of the execution flow (it's actually this library's very goal), but you have to see this both as a *advantage* and a *constraint*. Promises are frequently blamed for [never being synchronous](https://staltz.com/promises-are-not-neutral-enough.html#never-synchronous), meaning that any function in a Promise chain will run *asynchronously*, whether this function is actually asynchronous or not.
 
 ### A quick example
 Let's say we have a couple of utility functions, some synchronous and other asynchronous, and a user (Luke) whose favorite starship we would like to know.
