@@ -11,6 +11,7 @@
 
 * [always](always.md)
 * [apply](apply.md)
+* [arity](arity.md)
 * [filter](filter.md)
 * [map](map.md)
 
