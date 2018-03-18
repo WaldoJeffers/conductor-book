@@ -10,6 +10,7 @@
 ## API reference
 
 * [always](always.md)
+* [apply](apply.md)
 * [filter](filter.md)
 * [map](map.md)
 
