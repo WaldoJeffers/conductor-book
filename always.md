@@ -5,9 +5,9 @@
 ---
 
 #### description
-Returns a function which will always (hence the name) return the value you passed initially
+Returns a function which will always (hence the name) return the value you passed initially.
 
-#### examples
+#### example
 ```js
 import {always} from '@waldojeffers/conductor'
 
