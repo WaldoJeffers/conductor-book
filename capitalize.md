@@ -12,4 +12,5 @@ Capitalizes the first letter of the input string.
 import {capitalize} from '@waldojeffers/conductor'
 
 capitalize('hello') // 'Hello'
+capitalize('hello world') // 'Hello world'
 ```
