@@ -15,5 +15,6 @@
 * [branch](branch.md)
 * [capitalize](capitalize.md)
 * [filter](filter.md)
+* [identity](identity.md)
 * [map](map.md)
 
