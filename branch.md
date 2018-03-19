@@ -12,9 +12,9 @@
 import {branch} from '@waldojeffers/conductor'
 
 const numbers = [1,3,5]
-
 const sum = (...args) => args.reduce((a,b) => a + b)
-const multiply (...args) => args.reduce((a,b) => a * b)
+const multiply = (...args) => args.reduce((a,b) => a * b)
+const sumAndMultiply = branch(sum, multiply)
 
-branch(sum, multiply)(numbers) // [9, 15]
+sumAndMultiply(numbers) // [9, 15]
 ```
