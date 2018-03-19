@@ -13,6 +13,7 @@
 * [apply](apply.md)
 * [arity](arity.md)
 * [branch](branch.md)
+* capitalize
 * [filter](filter.md)
 * [map](map.md)
 
