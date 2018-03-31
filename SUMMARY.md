@@ -14,6 +14,7 @@
 * [arity](arity.md)
 * [branch](branch.md)
 * [capitalize](capitalize.md)
+* [compose](compose.md)
 * [filter](filter.md)
 * [identity](identity.md)
 * [map](map.md)
