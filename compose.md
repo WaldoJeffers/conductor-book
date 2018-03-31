@@ -49,4 +49,4 @@ await compose(minus3, times2Async) // 7
 await compose(minus3Async, times2) // 7
 ```
 
-Even if `multiply` and `minus3` do not accept the same number of arguments, `compose` will help you make their composition a breeze! It will simply accept as many arguments as `multiply` does : 2. You can verify that by accessing the `length` property on the composition's result. Even better, `compose`'s result will be curried, even if its rightmost argument is not.
+Even if `multiply` and `minus3` do not accept the same number of arguments, `compose` will help you make their composition a breeze! It will simply accept as many arguments as `multiply` does : 2. You can verify this by accessing the `length` property on the composition's result. Even better, `compose`'s result will be curried, even if its rightmost argument is not.
