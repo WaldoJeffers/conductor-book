@@ -9,7 +9,7 @@ Returns the result of calling the provided function with its arguments, which ar
 
 #### example
 ```js
-import {apply} from '@waldojeffers/conductor'
+import { apply } from '@waldojeffers/conductor'
 
 const numbers = [2, 1, 8, 3, 12]
 
