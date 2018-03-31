@@ -1,6 +1,6 @@
 # apply
 
-`apply :: (Function fn, Array arguments) -> Any value`
+###### `apply :: (Function fn, Array arguments) -> Any value`
 
 ---
 
