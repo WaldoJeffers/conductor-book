@@ -1,6 +1,6 @@
 # arity
 
-`arity :: (Number length, Function fn) -> Function fn`
+###### `arity :: (Number length, Function fn) -> Function fn`
 
 ---
 
