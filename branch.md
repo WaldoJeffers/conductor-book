@@ -1,6 +1,6 @@
 # branch
 
-`branch :: (Function f, Function g, Function h, ...) -> (a, b, c, ...) -> Array [f(a, b, c, ...), g(a, b, c, ...), h(a, b, c, ...), ...]`
+###### `branch :: (Function f, Function g, Function h, ...) -> (a, b, c, ...) -> Array [f(a, b, c, ...), g(a, b, c, ...), h(a, b, c, ...), ...]`
 
 ---
 
