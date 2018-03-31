@@ -9,7 +9,7 @@ Returns a function which will always (hence the name) return the value you passe
 
 #### example
 ```js
-import {always} from '@waldojeffers/conductor'
+import { always } from '@waldojeffers/conductor'
 
 const always2 = always(2)
 
