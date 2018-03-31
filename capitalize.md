@@ -1,6 +1,6 @@
 # capitalize
 
-`capitalize :: String input -> String output`
+###### `capitalize :: String input -> String output`
 
 ---
 
