@@ -20,7 +20,7 @@ const isFromTatooine = character => fetch(`https://swapi.co/planets/${character.
     .then(planet => planet.name === 'Tatooine')
 ```
 
-###### without conductor
+###### without conductor
 ```js
 const tatooine_residents = await characters.filter(isFromTatooine) // [Luke, C-3PO, R2-D2, Darth Vader, Leia]... wait what???
 ```
