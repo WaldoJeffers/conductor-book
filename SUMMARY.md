@@ -16,6 +16,7 @@
 * [branch](branch.md)
 * [capitalize](capitalize.md)
 * [compose](compose.md)
+* [curry](curry.md)
 * [filter](filter.md)
 * [identity](identity.md)
 * [map](map.md)
