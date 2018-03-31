@@ -10,6 +10,7 @@
 ## API reference
 
 * [always](always.md)
+* [append](append.md)
 * [apply](apply.md)
 * [arity](arity.md)
 * [branch](branch.md)

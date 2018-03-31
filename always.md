@@ -1,6 +1,6 @@
 # always
 
-`always :: Any value -> () -> Any value`
+###### `always :: Any value -> () -> Any value`
 
 ---
 
