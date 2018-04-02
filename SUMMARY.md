@@ -17,6 +17,7 @@
 * [capitalize](capitalize.md)
 * [compose](compose.md)
 * [curry](curry.md)
+* [curryN](curryn.md)
 * [filter](filter.md)
 * [identity](identity.md)
 * [map](map.md)
