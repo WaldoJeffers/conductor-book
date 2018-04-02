@@ -12,7 +12,7 @@ Returns a [curried version](https://en.wikipedia.org/wiki/Currying) of the provi
 #### examples
 ##### basic example
 ```js
-import { curryN} from '@waldojeffers/conductor'
+import { curryN } from '@waldojeffers/conductor'
 
 const multiply = (x, y) => x * y
 const times3 = curryN(2, multiply)(3)
@@ -22,7 +22,7 @@ times3(5) // 15
 
 ##### 0-arity functions
 ```js
-import { curryN} from '@waldojeffers/conductor'
+import { curryN } from '@waldojeffers/conductor'
 
 function multiply(){
     return arguments[0] * arguments[1]
