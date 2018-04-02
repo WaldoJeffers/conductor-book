@@ -5,7 +5,7 @@
 ---
 
 #### description
-Returns a `Promise` to the output value (passed as the second argument) after the desired delay (passed as the first argument). It is particularly useful when it is used in its partially applied form in a composition chain.
+Returns a `Promise` resolving to the output value (passed as the second argument) after the desired delay (passed as the first argument). It is particularly useful when it is used in its partially applied form in a composition chain.
 
 
 #### examples
