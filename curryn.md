@@ -12,45 +12,26 @@ Returns a [curried version](https://en.wikipedia.org/wiki/Currying) of the provi
 #### examples
 ##### basic example
 ```js
-import { curry } from '@waldojeffers/conductor'
+import { curryN} from '@waldojeffers/conductor'
 
 const multiply = (x, y) => x * y
-const times2 = curry(multiply)(2)
+const times3 = curryN(2, multiply)(3)
 
-times2(5) // 10
+times3(5) // 15
 ```
 
-##### arity preservation
+##### 0-arity functions
 ```js
-import { curry } from '@waldojeffers/conductor'
+import { curryN} from '@waldojeffers/conductor'
 
-const multiply = (x, y) => x * y
-multiply.length // 2
-curry(multiply).length // 2
+function multiply(){
+    return arguments[0] * arguments[1]
+}
+multiply.length // 0
+curryN(2, multiply).length // 2 
+const times3 = curryN(2, multiply)(3)
+
+times3(5) // 15
 ```
-The resulting function has the same arity as the original.
-
-
-##### deep currying
-```js
-import { curry } from '@waldojeffers/conductor'
-
-const add = (a, b, c, d) => a + b + c + d
-const addCurried = curry(add)
-addCurried(1) // Function
-addCurried(1)(2) // Function
-addCurried(1)(2)(3) // Function
-addCurried(1)(2)(3)(4) // 10
-```
-
-##### passing more than one argument
-```js
-import { curry } from '@waldojeffers/conductor'
-
-const add = (a, b, c) => a + b + c
-const add3 = curry(add)(1, 2)
-add3(3) // 6
-```
-
 
 
