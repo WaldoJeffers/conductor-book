@@ -19,9 +19,9 @@
 * [curry](api-reference/curry.md)
 * [curryN](api-reference/curryn.md)
 * [delay](api-reference/delay.md)
+* [entries](api-reference/entries.md)
 * [dump](api-reference/dump.md)
 * [filter](api-reference/filter.md)
 * [identity](api-reference/identity.md)
 * [map](api-reference/map.md)
-* [entries](api-reference/untitled.md)
 
