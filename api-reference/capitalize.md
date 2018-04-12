@@ -1,16 +1,17 @@
 # capitalize
 
-###### `capitalize :: String input -> String output`
+### `capitalize :: String input -> String output`
 
----
+## description
 
-#### description
 Capitalizes the first letter of the input string.
 
-#### example
-```js
+## example
+
+```javascript
 import { capitalize } from '@waldojeffers/conductor'
 
 capitalize('hello') // 'Hello'
 capitalize('hello world') // 'Hello world'
 ```
+

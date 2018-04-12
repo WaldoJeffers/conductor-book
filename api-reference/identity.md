@@ -1,15 +1,16 @@
 # identity
 
-###### `identity :: Any input -> Any input`
+### `identity :: Any input -> Any input`
 
----
+## description
 
-#### description
 Returns the value passed as input without any modification.
 
-#### example
-```js
+## example
+
+```javascript
 import { identity } from '@waldojeffers/conductor'
 
 identity('hello') // 'hello'
 ```
+

@@ -1,25 +1,27 @@
-# Summary
+# Table of contents
+
+* [Introduction](README.md)
 
 ## Overview
 
-* [Introduction](README.md)
-* [Core concepts](core-concepts.md)
-  * [Control the execution flow](core-concepts.md#control-of-the-execution-flow)
-  * [Functional programming style](core-concepts.md#functional-programming-style)
+* [Introduction](overview/introduction.md)
+* [Core concepts](overview/core-concepts.md)
 
 ## API reference
 
-* [always](always.md)
-* [append](append.md)
-* [apply](apply.md)
-* [arity](arity.md)
-* [branch](branch.md)
-* [capitalize](capitalize.md)
-* [compose](compose.md)
-* [curry](curry.md)
-* [curryN](curryn.md)
-* [delay](delay.md)
-* [filter](filter.md)
-* [identity](identity.md)
-* [map](map.md)
+* [always](api-reference/always.md)
+* [append](api-reference/append.md)
+* [apply](api-reference/apply.md)
+* [arity](api-reference/arity.md)
+* [branch](api-reference/branch.md)
+* [capitalize](api-reference/capitalize.md)
+* [compose](api-reference/compose.md)
+* [curry](api-reference/curry.md)
+* [curryN](api-reference/curryn.md)
+* [delay](api-reference/delay.md)
+* [dump](api-reference/dump.md)
+* [filter](api-reference/filter.md)
+* [identity](api-reference/identity.md)
+* [map](api-reference/map.md)
+* Untitled
 
