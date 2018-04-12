@@ -23,5 +23,5 @@
 * [filter](api-reference/filter.md)
 * [identity](api-reference/identity.md)
 * [map](api-reference/map.md)
-* Untitled
+* [entries](api-reference/untitled.md)
 
