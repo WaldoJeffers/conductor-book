@@ -28,7 +28,7 @@ await filter(double, values) // [0, 2]
 ```
 
 {% hint style="warning" %}
-If you use an _asynchronous_ predicate function, all `predicate` calls will be done in **parallel**, but the input collection's **order will be preserved**.
+If you use an _asynchronous_ predicate function, all calls to the `predicate` function will be done in **parallel**, but the input collection's **order will be preserved**.
 {% endhint %}
 
 ## examples
