@@ -1,6 +1,10 @@
+---
+description: Filters a collection using a predicate
+---
+
 # filter
 
-### `filter :: (Collection collection, Function predicate) -> Collection | Promise<Collection>`
+`filter :: (Collection collection, Function predicate) -> Collection | Promise<Collection>`
 
 ## description
 
@@ -23,7 +27,45 @@ filter(double, values) // Promise<Pending>
 await filter(double, values) // [0, 2]
 ```
 
-**Important**
-
+{% hint style="warning" %}
 If you use an _asynchronous_ predicate function, all `predicate` calls will be done in **parallel**, but the input collection's **order will be preserved**.
+{% endhint %}
+
+## examples
+
+#### basic example
+
+```javascript
+import { filter } from '@waldojeffers/conductor'
+
+const values = [0, 1, 2, 3]
+const isEven = x => x % 2 === 0
+filter(isEven, values) // [0, 2]
+```
+
+Here, we are just using filtering on an array to keep only even values. The predicate function is synchronous.
+
+#### other data structures
+
+```javascript
+import { filter } from '@waldojeffers/conductor'
+
+const object = { drummer: 1, drumsticks: 2 }
+const map = new Map([['drummer', 1], ['drumsticks', 2]])
+const set = new Set([0, 1, 2, 3]) 
+const isEven = x => x % 2 === 0
+filter(isEven, object) // { drumsticks: 2 }
+filter(isEven, map) // Map { 'drumsticks' => 2 }
+filter(isEven, set) // Set { 0, 2 }
+```
+
+#### using the index in the predicate function
+
+```javascript
+import { filter } from '@waldojeffers/conductor'
+
+const words = ['hello', 'hello', 'world', 'world']
+const isEven = x => x % 2 === 0
+filter((_, index) => isEven(index), words) // ['hello', 'world']
+```
 
