@@ -55,10 +55,10 @@ We're using `findIndex` on data structures which are not arrays, and we are sti
 import { findIndex } from '@waldojeffers/conductor'
 
 const character_ids = [1, 3]
-const getCharacter = id => fetch(`https://swapi.co/api/people/${id}`).then
-const predicate = id => id === 'world'
-findIndex(predicate, words) // 1
+const getCharacter = id => fetch(`https://swapi.co/api/people/${id}`).then(res => res.json())
+const predicate = id => getCharacter(id).then(character => character.name === 'R2-D2')
+await findIndex(predicate, character_ids) // 1
 ```
 
-
+Here, we have an asynchronous predicate which takes a character\_id and checks if the character is R2-D2,  using the [Star Wars API](https://swapi.co/).
 
