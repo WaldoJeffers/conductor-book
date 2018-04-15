@@ -23,6 +23,7 @@
 * [entries](api-reference/entries.md)
 * [equal](api-reference/equal.md)
 * [filter](api-reference/filter.md)
+* [findIndex](api-reference/findindex.md)
 * [identity](api-reference/identity.md)
 * [map](api-reference/map.md)
 

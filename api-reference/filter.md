@@ -69,3 +69,15 @@ const isEven = x => x % 2 === 0
 filter((_, index) => isEven(index), words) // ['hello', 'world']
 ```
 
+#### using an asynchronous predicate
+
+```javascript
+import { filter } from '@waldojeffers/conductor'
+
+const values = [0, 1, 2, 3]
+const isEven = async x => x % 2 === 0
+await filter(double, values) // [0, 2]
+```
+
+If your predicate function is _asynchronous_, you will need to use `await` \(or `Promise.prototype.then`\) because the result will be a `Promise`.
+
