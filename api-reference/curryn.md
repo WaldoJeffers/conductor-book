@@ -1,6 +1,6 @@
 # curryN
 
-#### `curryN :: (Number arity, Function f) -> Function g`
+**`curryN :: (Number arity, Function f) -> Function g`**
 
 ## description
 
@@ -13,7 +13,7 @@ Returns a [curried version](https://en.wikipedia.org/wiki/Currying) of the provi
 ### basic example
 
 ```javascript
-import { curryN } from '@waldojeffers/conductor'
+import { curryN } from 'conductor'
 
 const multiply = (x, y) => x * y
 const times3 = curryN(2, multiply)(3)
@@ -24,7 +24,7 @@ times3(5) // 15
 ### 0-arity functions
 
 ```javascript
-import { curryN } from '@waldojeffers/conductor'
+import { curryN } from 'conductor'
 
 function multiply(){
     return arguments[0] * arguments[1]
