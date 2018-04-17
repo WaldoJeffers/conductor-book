@@ -1,6 +1,6 @@
 # identity
 
-### `identity :: Any input -> Any input`
+**`identity :: Any input -> Any input`**
 
 ## description
 
@@ -9,7 +9,7 @@ Returns the value passed as input without any modification.
 ## example
 
 ```javascript
-import { identity } from '@waldojeffers/conductor'
+import { identity } from 'conductor'
 
 identity('hello') // 'hello'
 ```
