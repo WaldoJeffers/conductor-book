@@ -13,7 +13,7 @@ Returns a function which will always \(hence the name\) return the value you pas
 ## example
 
 ```javascript
-import { always } from '@waldojeffers/conductor'
+import { always } from 'conductor'
 
 const always2 = always(2)
 
