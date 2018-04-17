@@ -1,6 +1,6 @@
 # compose
 
-#### `compose :: (Function f, Function g, ...) -> Function f ∘ g ∘ ...`
+**`compose :: (Function f, Function g, ...) -> Function f ∘ g ∘ ...`**
 
 ## description
 
@@ -13,7 +13,7 @@ But that's not all! `compose` also has magic powers: it composes _synchronous_ f
 ### basic example
 
 ```javascript
-import { compose } from '@waldojeffers/conductor'
+import { compose } from 'conductor'
 
 const times2 = x => 2 * x
 const minus3 = x => x - 3
