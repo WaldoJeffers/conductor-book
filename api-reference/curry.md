@@ -1,6 +1,6 @@
 # curry
 
-#### `curry :: Function f -> Function g`
+**`curry :: Function f -> Function g`**
 
 ## description
 
@@ -13,7 +13,7 @@ Returns a [curried version](https://en.wikipedia.org/wiki/Currying) of the provi
 ### basic example
 
 ```javascript
-import { curry } from '@waldojeffers/conductor'
+import { curry } from 'conductor'
 
 const multiply = (x, y) => x * y
 const times2 = curry(multiply)(2)
@@ -24,7 +24,7 @@ times2(5) // 10
 ### arity preservation
 
 ```javascript
-import { curry } from '@waldojeffers/conductor'
+import { curry } from 'conductor'
 
 const multiply = (x, y) => x * y
 multiply.length // 2
@@ -36,7 +36,7 @@ The resulting function has the same arity as the original.
 ### deep currying
 
 ```javascript
-import { curry } from '@waldojeffers/conductor'
+import { curry } from 'conductor'
 
 const add = (a, b, c, d) => a + b + c + d
 const addCurried = curry(add)
@@ -49,7 +49,7 @@ addCurried(1)(2)(3)(4) // 10
 ### passing more than one argument
 
 ```javascript
-import { curry } from '@waldojeffers/conductor'
+import { curry } from 'conductor'
 
 const add = (a, b, c) => a + b + c
 const add3 = curry(add)(1, 2)
