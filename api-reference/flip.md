@@ -4,7 +4,7 @@ description: Flip a function parameters' order
 
 # flip
 
-`flip ::  Function f -> Function g`
+**`flip ::  Function f -> Function g`**
 
 ## description
 
@@ -17,7 +17,7 @@ Returns a new function function which expects the same parameters as the provide
 #### basic example
 
 ```javascript
-import { flip } from '@waldojeffers/conductor'
+import { flip } from 'conductor'
 
 const minus = (a, b) => a - b
 flip(minus)(3, 10) // 7
@@ -26,7 +26,7 @@ flip(minus)(3, 10) // 7
 #### creating a partially applied function
 
 ```javascript
-import { apply, map, flip } from '@waldojeffers/conductor'
+import { apply, map, flip } from 'conductor'
 
 const numbers = [7, 5]
 const add = (a, b) => a + b

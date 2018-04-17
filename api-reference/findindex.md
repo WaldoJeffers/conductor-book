@@ -4,7 +4,7 @@ description: Find the index of an item using a predicate
 
 # findIndex
 
-`findIndex :: (Function predicate, Collection collection) -> Any index`
+**`findIndex :: (Function predicate, Collection collection) -> Any index`**
 
 ## description
 
@@ -25,7 +25,7 @@ The predicate function can be _asynchronous_, which will turn the result into a 
 #### basic example
 
 ```javascript
-import { findIndex } from '@waldojeffers/conductor'
+import { findIndex } from 'conductor'
 
 const words = ['hello', 'world']
 const predicate = word => word === 'world'
@@ -35,7 +35,7 @@ findIndex(predicate, words) // 1
 #### searching in other data structures
 
 ```javascript
-import { findIndex } from '@waldojeffers/conductor'
+import { findIndex } from 'conductor'
 
 const words = new Set(['hello', 'world'])
 const translator = {hola: 'hello', mundo: 'world'}
@@ -52,7 +52,7 @@ We're using `findIndex` on data structures which are not arrays, and we are sti
 #### using an asynchronous predicate
 
 ```javascript
-import { findIndex } from '@waldojeffers/conductor'
+import { findIndex } from 'conductor'
 
 const character_ids = [1, 3]
 const getCharacter = id => fetch(`https://swapi.co/api/people/${id}`).then(res => res.json())
