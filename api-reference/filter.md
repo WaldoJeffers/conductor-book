@@ -4,7 +4,7 @@ description: Filters a collection using a predicate
 
 # filter
 
-`filter :: (Collection collection, Function predicate) -> Collection | Promise<Collection>`
+**`filter :: (Collection collection, Function predicate) -> Collection | Promise<Collection>`**
 
 ## description
 
@@ -36,7 +36,7 @@ If you use an _asynchronous_ predicate function, all calls to the `predicate` fu
 #### basic example
 
 ```javascript
-import { filter } from '@waldojeffers/conductor'
+import { filter } from 'conductor'
 
 const values = [0, 1, 2, 3]
 const isEven = x => x % 2 === 0
@@ -48,7 +48,7 @@ Here, we are just using filtering on an array to keep only even values. The pred
 #### other data structures
 
 ```javascript
-import { filter } from '@waldojeffers/conductor'
+import { filter } from 'conductor'
 
 const object = { drummer: 1, drumsticks: 2 }
 const map = new Map([['drummer', 1], ['drumsticks', 2]])
@@ -62,7 +62,7 @@ filter(isEven, set) // Set { 0, 2 }
 #### using the index in the predicate function
 
 ```javascript
-import { filter } from '@waldojeffers/conductor'
+import { filter } from 'conductor'
 
 const words = ['hello', 'hello', 'world', 'world']
 const isEven = x => x % 2 === 0
@@ -72,7 +72,7 @@ filter((_, index) => isEven(index), words) // ['hello', 'world']
 #### using an asynchronous predicate
 
 ```javascript
-import { filter } from '@waldojeffers/conductor'
+import { filter } from 'conductor'
 
 const values = [0, 1, 2, 3]
 const isEven = async x => x % 2 === 0
