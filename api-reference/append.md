@@ -11,7 +11,7 @@ Add an item at the **end** of an array. `append` is a _pure function_ and will r
 ## example
 
 ```javascript
-import { append } from '@waldojeffers/conductor'
+import { append } from 'conductor'
 
 append('world', ['hello']) // ['hello', 'world']
 append('world')(['hello']) // ['hello', 'world']
