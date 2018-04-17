@@ -9,7 +9,7 @@ Returns a new function whose arity will be the first argument you provide to `ar
 ## example
 
 ```javascript
-import { arity } from '@waldojeffers/conductor'
+import { arity } from 'conductor'
 
 const words = ['hello', 'world']
 

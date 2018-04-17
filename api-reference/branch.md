@@ -1,6 +1,6 @@
 # branch
 
-### `branch :: (Function f, Function g, Function h, ...) -> (a, b, c, ...) -> Array [f(a, b, c, ...), g(a, b, c, ...), h(a, b, c, ...), ...]`
+`branch :: (Function f, Function g, Function h, ...) -> (a, b, c, ...) -> Array [f(a, b, c, ...), g(a, b, c, ...), h(a, b, c, ...), ...]`
 
 ## description
 
@@ -9,7 +9,7 @@
 ## example
 
 ```javascript
-import { branch } from '@waldojeffers/conductor'
+import { branch } from 'conductor'
 
 const numbers = [1,3,5]
 const sum = (...args) => args.reduce((a,b) => a + b)
