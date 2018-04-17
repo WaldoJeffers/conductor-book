@@ -86,7 +86,7 @@ This function is now broken because `getStarships` returns a `Promise`.
 With **conductor**, you won't have to make all your utility functions _asynchronous_ to compose them, since all the library's functions will work with both synchronous and asynchronous functions, allowing you to mix them with no hassle. Let's pull back our attempt at using `compose` from the previous example, but this time using **conductor**'s `compose` function.
 
 ```javascript
-import {compose} from 'conductor'
+import { compose } from 'conductor'
 
 const getFavoriteStarshipName = await compose(getStarshipName, fetchStarship, head, getStarships)
 getFavoriteStarshipName(Luke) // 'X-Wing'
