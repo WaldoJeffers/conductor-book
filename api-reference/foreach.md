@@ -4,7 +4,7 @@ description: Call a function for each item of a collection
 
 # forEach
 
-**`forEach :: (Function fn, Collection collection) -> undefined`**
+**`forEach :: (Function callback, Collection collection) -> undefined`**
 
 ## description
 
@@ -21,4 +21,19 @@ where:
 {% hint style="info" %}
 If the collection is a `Set`, the **value** and the **key** will be equal.
 {% endhint %}
+
+## examples
+
+#### basic example
+
+```javascript
+import { forEach } from 'conductor'
+
+const numbers = [3, 1, 4]
+const log = x => console.log(x)
+forEach(numbers, log)
+// 3
+// 1
+// 4
+```
 
