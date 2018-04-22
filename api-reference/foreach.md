@@ -8,7 +8,7 @@ description: Call a function for each item of a collection
 
 ## description
 
-Iterates over a collection and calls the provided function for each item in the collection. The function should have the following signature:
+Iterates over a collection and calls the provided callback function for each item in the collection. The callback function should have the following signature:
 
 `(Any value, Any key, Collection collection) -> Any`
 
