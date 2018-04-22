@@ -1,0 +1,24 @@
+---
+description: Call a function for each item of a collection
+---
+
+# forEach
+
+**`forEach :: (Function fn, Collection collection) -> undefined`**
+
+## description
+
+Iterates over a collection and calls the provided function for each item in the collection. The function should have the following signature:
+
+`(Any value, Any key, Collection collection) -> Any`
+
+where: 
+
+* **value** is the current item's value
+* **key** is the item's key or index \(depending on if the collection is an `Array`, a `Set`, an `Object`, or a `Map`\).
+* **collection** is the collection being iterated on.
+
+{% hint style="info" %}
+If the collection is a `Set`, the **value** and the **key** will be equal.
+{% endhint %}
+

@@ -27,4 +27,5 @@
 * [flip](api-reference/flip.md)
 * [identity](api-reference/identity.md)
 * [map](api-reference/map.md)
+* [forEach](api-reference/foreach.md)
 
