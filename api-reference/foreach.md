@@ -4,7 +4,7 @@ description: Call a function for each item of a collection
 
 # forEach
 
-**`forEach :: (Function callback, Collection collection) -> undefined`**
+**`forEach :: (Function callback, Collection collection) -> undefined | Promise<undefined>`**
 
 ## description
 
