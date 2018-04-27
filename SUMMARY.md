@@ -28,4 +28,5 @@
 * [identity](api-reference/identity.md)
 * [map](api-reference/map.md)
 * [forEach](api-reference/foreach.md)
+* [get](api-reference/get.md)
 
