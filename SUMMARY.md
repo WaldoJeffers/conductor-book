@@ -29,4 +29,5 @@
 * [get](api-reference/get.md)
 * [identity](api-reference/identity.md)
 * [map](api-reference/map.md)
+* [head](api-reference/untitled.md)
 
