@@ -25,8 +25,8 @@
 * [filter](api-reference/filter.md)
 * [findIndex](api-reference/findindex.md)
 * [flip](api-reference/flip.md)
-* [identity](api-reference/identity.md)
-* [map](api-reference/map.md)
 * [forEach](api-reference/foreach.md)
 * [get](api-reference/get.md)
+* [identity](api-reference/identity.md)
+* [map](api-reference/map.md)
 
