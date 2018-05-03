@@ -30,4 +30,5 @@
 * [identity](api-reference/identity.md)
 * [map](api-reference/map.md)
 * [head](api-reference/untitled.md)
+* [ifElse](api-reference/ifelse.md)
 
